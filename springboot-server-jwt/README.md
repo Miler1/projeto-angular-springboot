@@ -1,12 +1,5 @@
 
-# Backend
-
-## Localização
-```
- angular2-webpack/
- ├──backend/                           * pasta raiz
- |   ├──src                            * pasta do servidor
- ```
+## Quick start
 
 O servidor foi implementado na linguagem java com Spring Boot que é baseada no Spring e para o armazenamento de dados foi utilizado o servidor MySQL.
 
@@ -29,7 +22,7 @@ basta executar o comando:
 mvn spring-boot:run
 ```
 
-## Run following SQL insert statements
+## Executar o script SQL abaixo
 ```
 INSERT INTO roles(name) VALUES('ROLE_USER');
 INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
