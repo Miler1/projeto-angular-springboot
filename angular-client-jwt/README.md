@@ -1,38 +1,5 @@
-[![taylor swift](https://img.shields.io/badge/secured%20by-taylor%20swift-brightgreen.svg)](https://twitter.com/SwiftOnSecurity)
-[![volkswagen status](https://auchenberg.github.io/volkswagen/volkswargen_ci.svg?v=1)](https://github.com/auchenberg/volkswagen)
-[![Build Status](https://travis-ci.org/AngularClass/angular2-webpack-starter.svg?branch=master)](https://travis-ci.org/AngularClass/angular2-webpack-starter)
-[![GitHub version](https://badge.fury.io/gh/angularclass%2Fangular2-webpack-starter.svg)](https://badge.fury.io/gh/angularclass%2Fangular2-webpack-starter)
-[![Dependency Status](https://david-dm.org/angularclass/angular2-webpack-starter.svg)](https://david-dm.org/angularclass/angular2-webpack-starter)
-[![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/angularclass/angular-2-webpack-starter)
-
-<p align="center">
-  <a href="https://angularclass.com" target="_blank">
-    <img src="https://cloud.githubusercontent.com/assets/1016365/9863762/a84fed4a-5af7-11e5-9dde-d5da01e797e7.png" alt="Webpack and Angular 2" width="500" height="320"/>
-  </a>
-</p>
-
-> An Angular starter kit featuring [Angular 4](https://angular.io), [Ahead of Time Compile](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html), [Router](https://angular.io/docs/ts/latest/guide/router.html), [Forms](https://angular.io/docs/ts/latest/guide/forms.html),
-[Http](https://angular.io/docs/ts/latest/guide/server-communication.html),
-[Services](https://gist.github.com/gdi2290/634101fec1671ee12b3e#_follow_@AngularClass_on_twitter),
-[Tests](https://angular.io/docs/ts/latest/guide/testing.html), [E2E](https://angular.github.io/protractor/#/faq#what-s-the-difference-between-karma-and-protractor-when-do-i-use-which-)), [Karma](https://karma-runner.github.io/), [Protractor](https://angular.github.io/protractor/), [Jasmine](https://github.com/jasmine/jasmine), [Istanbul](https://github.com/gotwarlost/istanbul), [TypeScript](http://www.typescriptlang.org/), [@types](https://www.npmjs.com/~types), [TsLint](http://palantir.github.io/tslint/), [Codelyzer](https://github.com/mgechev/codelyzer), [Hot Module Replacement](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html), and [Webpack 2](http://webpack.github.io/) by [AngularClass](https://angularclass.com).
-Este repositório de sementes serve como um iniciador Angular para quem quer começar a operar com Angular e TypeScript rapidamente. Usando um [Webpack 2] (http://webpack.github.io/) para criar nossos arquivos e ajudar com o clichê. Também estamos usando o Transferidor para nossa história de ponta a ponta e o Karma para nossos testes de unidade.
-* Melhores práticas na organização de arquivos e aplicativos para o Angular.
-* Pronto para construir o sistema usando o Webpack para trabalhar com o TypeScript.
-* Exemplos angulares prontos para serem usados ao experimentar o Angular.
-* Um excelente repositório de sementes Angular para quem deseja iniciar seu projeto.
-* Ahead of Time (AoT) compila para carregamentos rápidos de páginas de sua produção.
-* Tremido de árvore para remover automaticamente o código não utilizado do seu pacote de produção.
-* [DLLs do Webpack] (https://robertknight.github.io/posts/webpack-dll-plugins/) aceleram drasticamente o desenvolvimento de suas compilações.
-* Teste de código angular com Jasmine e Karma.
-* Cobertura com Istambul e Karma
-* Código angular de ponta a ponta usando Transferidor.
-* Gerenciador de tipos com @types
-* Substituição de módulo quente com Webpack e [@ angularclass / hmr] (https://github.com/angularclass/angular2-hmr) e [@ angularclass / hmr-loader] (https://github.com/angularclass/angular2- hmr-loader)
-* Design de material com [angular / material2] (https://github.com/angular/material2)
-* Suporte ao Angular 4 através da alteração do package.json e de futuras versões do Angular
-
 ### Quick start
-Verifique se você possui a versão do nó> = 6.0 e NPM> = 3 **
+Verifique se você possui a versão do nó > = 6.0 e NPM> = 3 **
 > Clone / Faça o download do repositório e edite `app.component.ts` dentro de [` /src/app/app.component.ts`Body(/src/app/app.component.ts)
 
 ```bash
@@ -52,7 +19,7 @@ npm start
 # usar substituição de Hot Module
 npm run server:dev:hmr
 ```
-vai para [http://0.0.0.0:3000](http://0.0.0.0:3000) ou [http://localhost:3000](http://localhost:3000) no seu navegador
+vai para [http://localhost:4200](http://localhost:4200) no seu navegador
 
 # Table of Contents
 * [File Structure](#file-structure)
