@@ -17,7 +17,7 @@ caso o comando exibir a seguinte mensagem:
 basta executar o comando:
 "export PATH=$JAVA_HOME/jre/bin:$PATH" na qual permitirá a execução do comando do maven normalmente.
 
-## Run Spring Boot application
+## Executar o servidor no terminal
 ```
 mvn spring-boot:run
 ```
