@@ -1,7 +1,7 @@
 
 # Backend
 
-## Location
+## Localização
 ```
  angular2-webpack/
  ├──backend/                           * pasta raiz
