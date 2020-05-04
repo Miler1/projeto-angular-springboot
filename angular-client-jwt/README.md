@@ -20,7 +20,6 @@ npm >= 6.13.4
 
 ```bash
 # clone do repositório
-
 git clone https://github.com/Miler1/projeto-angular-springboot.git
 
 # mudar o diretorio do nosso repo
@@ -34,4 +33,4 @@ npm install
 npm start
 
 ```
-Com isso a aplicação poderá ser acessada através deste link: [http://localhost:4200](http://localhost:4200) para o seu navegador.
+Com isso a aplicação do frontend poderá ser acessada através deste link: [http://localhost:4200](http://localhost:4200)
