@@ -18,19 +18,17 @@ npm install
 # iniciar o servidor
 npm start
 
-# usar substituição de Hot Module
-npm run server:dev:hmr
 ```
-vai para [http://localhost:4200](http://localhost:4200) no seu navegador
+Copiar a url [http://localhost:4200](http://localhost:4200) para o seu navegador
 
 # Table of Contents
 * [File Structure](#file-structure)
 
 ## File Structure
-Usamos a abordagem de componentes em nosso motor de partida. Esse é o novo padrão para o desenvolvimento de aplicativos Angular e uma ótima maneira de garantir código sustentável, encapsulando nossa lógica de comportamento. Um componente é basicamente um aplicativo independente, geralmente em um único arquivo ou pasta com cada preocupação como um arquivo: estilo, modelo, especificações, e2e e classe de componente. Veja como fica:
+Abaixo se encontra a estrutura de arquivos do projeto do Angular:
 
 ```
-angular2-webpack/
+angular-client-jwt/
  ├──config/                        * our configuration
  |   ├──helpers.js                 * helper functions for our configuration files
  |   ├──spec-bundle.js             * ignore this magic that sets up our Angular testing environment
