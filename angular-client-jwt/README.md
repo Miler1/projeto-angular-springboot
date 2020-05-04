@@ -2,9 +2,7 @@
 
 ## Dependencies
 
-Os primeiros passos incluem verificar se você possui alguma versão do node e npm instalados. Os requisitos para a exeução do servidor incluem a instalação do node no computador. O node é um software que permite a execução do javascript e que através deste link ele pode ser baixado: https://nodejs.org/en/. Já o npm é instalado juntamente com node, o npm nada mais é um gerenciador de pacotes na qual permite a instalação de diversas outras ferramentas para auxilar no desenvolvimento. Após o download basta instalar e verificar se as dependências foram instalados corretamente:
-
-No terminal basta digitar o comando:
+Os primeiros passos incluem verificar se você possui alguma versão do node e npm instalados. Os requisitos para a exeução do servidor incluem a instalação do node no computador. O node é um software que permite a execução do javascript e que através deste link ele pode ser baixado: https://nodejs.org/en/. Já o npm é instalado juntamente com node, o npm nada mais é um gerenciador de pacotes na qual permite a instalação de diversas outras ferramentas para auxilar no desenvolvimento. Após o download basta instalar e verificar se as dependências foram instalados corretamente. No terminal basta digitar o comando:
 
 node -v
 npm -v
