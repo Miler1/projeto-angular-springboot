@@ -1,8 +1,10 @@
 ## Quick start
 
+O projeto foi desenvolvido com o Angular na versão 8 e para o desenvolvimento e construção dos sites responsivos foram utilizadas o Angular Material e Bootstrap e o npm como gerenciador de pacotes padrão. 
+
 ## Dependências
 
-Os primeiros passos incluem verificar se você possui alguma versão do node e npm instalados. Os requisitos para a exeução do servidor incluem a instalação do node no computador. O node é um software que permite a execução do javascript e que através deste link ele pode ser baixado: https://nodejs.org/en/. Já o npm é instalado juntamente com node, o npm nada mais é um gerenciador de pacotes na qual permite a instalação de diversas outras ferramentas para auxilar no desenvolvimento. Após o download basta instalar e verificar se as dependências foram instalados corretamente. No terminal basta digitar o comando:
+Os primeiros passos incluem verificar se há alguma versão do node e npm instalados. Os requisitos para a execução incluem a instalação do node no computador, para isso é necessário baixá-lo através deste link: https://nodejs.org/en/. Já o npm é instalado juntamente com node. Após o download basta instalar e verificar se as dependências foram instalados corretamente. No terminal basta digitar o comando:
 
 node -v
 npm -v
@@ -28,7 +30,7 @@ npm install
 npm start
 
 ```
-Copiar a url [http://localhost:4200](http://localhost:4200) para o seu navegador
+Com isso a aplicação poderá ser acessada através deste link: [http://localhost:4200](http://localhost:4200) para o seu navegador.
 
 
 ```
