@@ -33,7 +33,7 @@ INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 
 No repositório principal se encontra o script de criação das tabelas do banco de dados.
 ```
-#repositorio do backup
+# repositorio do backup
 https://github.com/Miler1/projeto-angular-springboot/
 
 ```
