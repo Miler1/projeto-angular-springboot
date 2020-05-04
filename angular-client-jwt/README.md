@@ -1,7 +1,18 @@
 ### Quick start
 
 ## Dependencies
-Verifique se você possui a versão do node >= v12.14.0 e npm >= 6.13.4.
+
+Os primeiros passos incluem verificar se você possui alguma versão do node e npm instalados. Os requisitos para a exeução do servidor incluem a instalação do node no computador. O node é um software que permite a execução do javascript e que através deste link ele pode ser baixado: https://nodejs.org/en/. Já o npm é instalado juntamente com node, o npm nada mais é um gerenciador de pacotes na qual permite a instalação de diversas outras ferramentas para auxilar no desenvolvimento. Após o download basta instalar e verificar se as dependências foram instalados corretamente:
+
+No terminal basta digitar o comando:
+
+node -v
+npm -v
+
+Caso apareça o número da versão, significa que o node foi instalado corretamente. Neste caso a versão que foi utilizada foram:
+
+node >= 12.14.0
+npm >= 6.13.4
 
 ```bash
 # clone do repositório
@@ -26,15 +37,6 @@ Abaixo se encontra a estrutura de arquivos do projeto do Angular:
 
 ```
 angular-client-jwt/
- ├──config/                        * our configuration
- |   ├──helpers.js                 * helper functions for our configuration files
- |   ├──spec-bundle.js             * ignore this magic that sets up our Angular testing environment
- |   ├──karma.conf.js              * karma config for our unit tests
- |   ├──protractor.conf.js         * protractor config for our end-to-end tests
- │   ├──webpack.dev.js             * our development webpack config
- │   ├──webpack.prod.js            * our production webpack config
- │   └──webpack.test.js            * our testing webpack config
- │
  ├──src/                           * our source files that will be compiled to javascript
  |   ├──main.browser.ts            * our entry file for our browser environment
  │   │
