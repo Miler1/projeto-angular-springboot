@@ -1,66 +1,29 @@
-# Spring Boot JWT Authentication example with Spring Security & Spring Data JPA
 
-For more detail, please visit:
-> [Secure Spring Boot App with Spring Security & JWT Authentication](https://bezkoder.com/spring-boot-jwt-authentication/)
+# Backend
 
-> [For MongoDB](https://bezkoder.com/spring-boot-jwt-auth-mongodb/)
-
-# Fullstack
-
-> [Spring Boot + Vue.js JWT Authentication](https://bezkoder.com/spring-boot-vue-js-authentication-jwt-spring-security/)
-
-> [Spring Boot + Angular 8 JWT Authentication](https://bezkoder.com/angular-spring-boot-jwt-auth/)
-
-> [Spring Boot + React JWT Authentication](https://bezkoder.com/spring-boot-react-jwt-auth/)
-
-## Dependency
-– If you want to use PostgreSQL:
-```xml
-<dependency>
-  <groupId>org.postgresql</groupId>
-  <artifactId>postgresql</artifactId>
-  <scope>runtime</scope>
-</dependency>
+## Location
 ```
-– or MySQL:
-```xml
-<dependency>
-  <groupId>mysql</groupId>
-  <artifactId>mysql-connector-java</artifactId>
-  <scope>runtime</scope>
-</dependency>
-```
-## Configure Spring Datasource, JPA, App properties
-Open `src/main/resources/application.properties`
-- For PostgreSQL:
-```
-spring.datasource.url= jdbc:postgresql://localhost:5432/testdb
-spring.datasource.username= postgres
-spring.datasource.password= 123
+ angular2-webpack/
+ ├──backend/                           * pasta raiz
+ |   ├──src                            * pasta do servidor
+ ```
 
-spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation= true
-spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.PostgreSQLDialect
+O servidor foi implementado na linguagem java com Spring Boot que é baseada no Spring e para o armazenamento de dados foi utilizado o servidor MySQL.
 
-# Hibernate ddl auto (create, create-drop, validate, update)
-spring.jpa.hibernate.ddl-auto= update
+Para executar o servidor spring boot deverão ser executadas as seguintes etapas:
 
-# App Properties
-bezkoder.app.jwtSecret= bezKoderSecretKey
-bezkoder.app.jwtExpirationMs= 86400000
-```
-- For MySQL
-```
-spring.datasource.url= jdbc:mysql://localhost:3306/testdb?useSSL=false
-spring.datasource.username= root
-spring.datasource.password= 123456
+dentro da pasta executar o comando:
+"mvn spring-boot:run" ou poderá ser aberto dentro de qualquer IDE de desenvolvimento de sua preferência.
+O comando acima instala as dependencias do maven quando é executado pela primeira vez e depois executa o servidor.
 
-spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQL5InnoDBDialect
-spring.jpa.hibernate.ddl-auto= update
+Como pré-requisito deve ser instalado o maven no seu computador o mesmo poderá ser baixado nesse link: https://maven.apache.org/download.cgi. No sistema operacional Windows o comando deve ser setado na variável de ambiente.
 
-# App Properties
-bezkoder.app.jwtSecret= bezKoderSecretKey
-bezkoder.app.jwtExpirationMs= 86400000
-```
+caso o comando exibir a seguinte mensagem: 
+"The JAVA_HOME environment variable is not defined correctly This environment variable is needed to run this program NB: JAVA_HOME should point to a JDK not a JRE" 
+
+basta executar o comando:
+"export PATH=$JAVA_HOME/jre/bin:$PATH" na qual permitirá a execução do comando do maven normalmente.
+
 ## Run Spring Boot application
 ```
 mvn spring-boot:run
