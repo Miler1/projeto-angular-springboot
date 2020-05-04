@@ -21,10 +21,7 @@ npm start
 ```
 Copiar a url [http://localhost:4200](http://localhost:4200) para o seu navegador
 
-# Table of Contents
-* [File Structure](#file-structure)
-
-## File Structure
+## Estrutura de arquivos
 Abaixo se encontra a estrutura de arquivos do projeto do Angular:
 
 ```
