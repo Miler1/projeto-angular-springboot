@@ -17,7 +17,7 @@ npm >= 6.13.4
 ```bash
 # clone do repositório
 
-git clone --depth 1 https://github.com/Miler1/projeto-angular-springboot.git
+git clone https://github.com/Miler1/projeto-angular-springboot.git
 
 # mudar o diretorio do nosso repo
 cd projeto-angular-springboot
