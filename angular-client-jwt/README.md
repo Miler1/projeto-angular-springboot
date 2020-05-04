@@ -4,7 +4,7 @@ O projeto foi desenvolvido com o Angular na versão 8 e para o desenvolvimento e
 
 ## Dependências
 
-Os primeiros passos incluem verificar se há alguma versão do node e npm instalados. Os requisitos para a execução incluem a instalação do node no computador, para isso é necessário baixá-lo através deste link: https://nodejs.org/en/. Já o npm é instalado juntamente com node. Após o download basta instalar e verificar se as dependências foram instalados corretamente. No terminal basta digitar o comando:
+Os primeiros passos incluem verificar se há alguma versão do node e npm instalados. Os requisitos para a execução incluem a instalação do node no computador, para isso é necessário baixá-lo através deste link: https://nodejs.org/en/. Já o npm é instalado juntamente com node. Após o download basta instalar e verificar se as dependências foram instaladas corretamente. No terminal basta digitar o comando:
 
 node -v
 npm -v
