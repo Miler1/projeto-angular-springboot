@@ -1,5 +1,5 @@
 ### Quick start
-Verifique se você possui a versão do nó > = 6.0 e NPM> = 3 **
+Verifique se você possui a versão do node > = v12.14.0 e npm >= 6.13.4 **
 > Clone / Faça o download do repositório e edite `app.component.ts` dentro de [` /src/app/app.component.ts`Body(/src/app/app.component.ts)
 
 ```bash
