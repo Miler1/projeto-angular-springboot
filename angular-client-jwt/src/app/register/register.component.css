@@ -1,0 +1,27 @@
+img {
+    margin: 0 auto;
+    height: 100%;
+    width: calc(20% + 32px);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.example-full-width {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-register {
+    text-align: center;
+    /* margin-left: 60px;
+    margin-right: 60px; */
+    margin-top: 30px;
+    /* padding-right: calc(20% + 32px);
+    padding-left: calc(20% + 32px); */
+}

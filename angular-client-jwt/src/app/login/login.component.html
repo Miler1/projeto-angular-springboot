@@ -1,0 +1,47 @@
+<div class="w-25 p-3 container">
+    <mat-card class="card-login">
+        <mat-card-title >Login</mat-card-title>
+        <img mat-card-image 
+            src="//ssl.gstatic.com/accounts/ui/avatar_1x.png"
+            alt="Homer Simpson">
+        <mat-card-content>
+            <form *ngIf="!isLoggedIn" class="example-form" name="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutAlign="space-between" form="NgForm">
+                <input type="hidden" formControlName="_id">
+                <mat-form-field class="example-full-width">
+                    <input required matInput placeholder="User name" formControlName="username">
+                    <mat-error *ngIf="hasError('username', 'required')">Nome de usuário é obrigatório.</mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <input required type="password" matInput placeholder="Password" formControlName="password">
+                    <mat-error *ngIf="hasError('password', 'required')">
+                        A senha é obrigatória.
+                    </mat-error>
+                    <mat-error *ngIf="hasError('password', 'minlength')">
+                        A senha deve ter no mínimo 6 caracteres
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-card-actions>
+                    <button [disabled]="hasError('username', 'required') || 
+                                        hasError('password', 'required') ||
+                                        hasError('password', 'minlength')" 
+                            class="example-full-width" mat-raised-button color="primary">Login</button>
+                </mat-card-actions>
+
+                <div class="form-group">
+                    <div
+                    class="alert alert-danger"
+                    role="alert"
+                    *ngIf="submitted && isLoginFailed"
+                    >
+                    {{ errorMessage }}
+                    </div>
+                </div>
+            </form>
+            <div class="alert alert-success" *ngIf="isLoggedIn">
+                Logged in as {{ roles }}.
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

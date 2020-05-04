@@ -1,0 +1,51 @@
+<div class="w-25 container">
+    <mat-card class="card-register">
+        <mat-card-title >Registro de usuário</mat-card-title>
+        <img mat-card-image 
+            src="//ssl.gstatic.com/accounts/ui/avatar_1x.png"
+            alt="Homer Simpson">
+        <mat-card-content>
+            <form *ngIf="!isSuccessful" class="example-form" name="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutAlign="space-between" form="NgForm">
+                <input type="hidden" formControlName="_id">
+                <mat-form-field class="example-full-width">
+                    <input required matInput placeholder="User name" formControlName="username">
+                    <mat-error *ngIf="hasError('username', 'required')">Nome de usuário é obrigatório.</mat-error>
+                </mat-form-field>
+                
+                <mat-form-field class="example-full-width">
+                    <input required matInput placeholder="Email" formControlName="email">
+                    <mat-error *ngIf="hasError('email', 'required')">Email é obrigatório</mat-error>
+                    <mat-error *ngIf="hasError('email', 'email')">Informe um endereço de email válido</mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <input required type="password" matInput placeholder="Password" formControlName="password">
+                    <mat-error *ngIf="hasError('password', 'required')">A senha é obrigatória.</mat-error>
+                    <mat-error *ngIf="hasError('password', 'minlength')">A senha deve ter no mínimo 6 caracteres</mat-error>
+                </mat-form-field>
+            
+                <mat-card-actions >
+                    <button [disabled]="hasError('username', 'required') || 
+                                        hasError('password', 'required') ||
+                                        hasError('email', 'required')    ||
+                                        hasError('email', 'email')       ||
+                                        hasError('password', 'minlength')" 
+                    class="example-full-width" mat-raised-button color="primary">Sign Up</button>
+                </mat-card-actions>
+
+                <div class="form-group">
+                    <div
+                    class="alert alert-danger"
+                    role="alert"
+                    *ngIf="submitted && isSignUpFailed"
+                    >
+                    {{ errorMessage }}
+                    </div>
+                </div>
+            </form>
+            <div class="alert alert-success" *ngIf="isSuccessful">
+                Seu registro foi bem sucedido!
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

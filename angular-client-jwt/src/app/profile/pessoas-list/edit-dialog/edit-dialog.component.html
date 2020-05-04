@@ -1,0 +1,88 @@
+<!-- Modal de Edição de Pessoa -->
+<h2 mat-dialog-title>{{description}}</h2>
+<form class="example-form" [formGroup]="form">
+<mat-card>
+    <mat-dialog-content>
+        
+            <mat-form-field class="input-nome">
+                <mat-label>Nome</mat-label>
+                <input matInput placeholder="Informe seu nome" id="nome" name="nome" required formControlName="nome">
+                <mat-error *ngIf="hasError('nome', 'required')">O Nome é obrigatório</mat-error>
+            </mat-form-field>
+            
+            <mat-form-field class="input-cpf">
+                <mat-label>CPF</mat-label>
+                <input [textMask]="{mask: cpfMask}" matInput placeholder="Informe seu CPF" id="cpf" name="cpf" required formControlName="cpf">
+                <mat-error *ngIf="hasError('cpf', 'required')"> O Cpf é obrigatório</mat-error>
+                <mat-error *ngIf="hasError('cpf', 'maxlength')">O Cpf deve ser todo preenchido</mat-error>
+            </mat-form-field>
+                        
+            <mat-form-field class="input-datanascimento">
+                <mat-label>Data de Nascimento</mat-label>
+                <input readonly matInput [min]="date" [matDatepicker]="myDatepicker" 
+                name="dataNascimento" id="dataNascimento" formControlName="dataNascimento">
+                <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+                <mat-datepicker #myDatepicker></mat-datepicker>
+            </mat-form-field>
+            
+            <mat-form-field class="input-endereco">
+                <mat-label>Endereço</mat-label>
+                <input matInput placeholder="Informe o endereço" id="endereco" name="endereco" formControlName="endereco">
+            </mat-form-field>
+
+            <mat-form-field class="input-bairro">
+                <mat-label>Bairro</mat-label>
+                <input matInput placeholder="Informe o bairro" id="bairro" name="bairro" formControlName="bairro">
+            </mat-form-field>
+
+            <mat-form-field class="input-cidade">
+                <mat-label>Cidade</mat-label>
+                <input matInput placeholder="Informe a cidade" id="cidade" name="cidade" formControlName="cidade">
+            </mat-form-field>
+
+            <mat-form-field class="input-estado">
+                <mat-label>Estado</mat-label>
+                <mat-select name="uf" id="uf" (ngModelChange)="onGetUF()" formControlName="uf">
+                    <mat-option *ngFor="let estado of estados" [value]="estado.sigla">
+                        {{estado.sigla}}
+                    </mat-option>
+                </mat-select>
+                <!-- <mat-error *ngIf="hasError('uf', 'required')">Estado is required</mat-error> -->
+            </mat-form-field>
+
+            <mat-form-field class="input-cep">
+                <mat-label>Cep</mat-label>
+                <input [textMask]="{mask: cepMask}" matInput placeholder="Informe a cep" id="cep" name="cep" formControlName="cep">
+            </mat-form-field>
+        <!-- </form> -->
+    </mat-dialog-content>
+</mat-card>
+<mat-divider></mat-divider>
+<br>
+<mat-card>
+    <mat-dialog-content>
+        <h5 mat-subheader>Contatos</h5>
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Informe o email de contato" id="email" name="email" formControlName="email">
+        </mat-form-field>
+        
+        <mat-form-field class="input-telefone">
+            <mat-label>Telefone</mat-label>
+            <input [textMask]="{mask: telefoneMask}" matInput placeholder="Informe o telefone de contato" id="telefone" name="telefone" formControlName="telefone">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Skype</mat-label>
+            <input matInput placeholder="Informe o skype para contato" id="skype" name="skype" formControlName="skype">
+        </mat-form-field>
+    </mat-dialog-content>
+</mat-card>
+</form>
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click)="close()">Close</button>
+    <button [disabled]="hasError('nome', 'required') ||
+                        hasError('cpf', 'required')  ||
+                        hasError('cpf', 'maxlength')" 
+        class="mat-raised-button mat-primary" (click)="save(pessoa.id)">Save</button>
+</mat-dialog-actions> 

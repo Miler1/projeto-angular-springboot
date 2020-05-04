@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS pessoa;
+
+CREATE TABLE pessoa (
+   id INT(11) NOT NULL AUTO_INCREMENT,
+   cpf VARCHAR(14) NOT NULL UNIQUE,
+   data_nascimento DATE NULL,
+   nome VARCHAR(60) NOT NULL,
+   peso INT(11) NULL,
+   uf CHAR(2) NOT NULL,
+   bairro VARCHAR(45) NULL,
+   cep VARCHAR(9) NULL,
+   cidade VARCHAR(45) NULL,
+   email VARCHAR(45) NULL,
+   endereco VARCHAR(60) NULL,
+   skype VARCHAR(45) NULL,
+   telefone VARCHAR(14) NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
