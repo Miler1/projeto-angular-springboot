@@ -1,7 +1,7 @@
 ### Quick start
 
 ## Dependencies
-Verifique se você possui a versão do node > = v12.14.0 e npm >= 6.13.4.
+Verifique se você possui a versão do node >= v12.14.0 e npm >= 6.13.4.
 
 ```bash
 # clone do repositório
