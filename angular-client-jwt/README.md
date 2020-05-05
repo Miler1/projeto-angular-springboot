@@ -1,27 +1,36 @@
-# Materialapp
+## Quick start
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+O projeto foi desenvolvido com o Angular na versão 8 e para o desenvolvimento e construção dos sites responsivos foram utilizadas o Angular Material e Bootstrap e o npm como gerenciador de pacotes padrão. 
 
-## Development server
+## Dependências
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Os primeiros passos incluem verificar se há alguma versão do node e npm instalados. Os requisitos para a execução incluem a instalação do node no computador, para isso é necessário baixá-lo através deste link: https://nodejs.org/en/. Já o npm é instalado juntamente com node. Após o download basta instalar e verificar se as dependências foram instaladas corretamente. No terminal basta digitar o comando:
 
-## Code scaffolding
+```bash
+node -v
+npm -v
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Caso apareça o número da versão, significa que o node foi instalado corretamente. Neste caso a versão que foi utilizada foram:
 
-## Build
+```bash
+node >= 12.14.0
+npm >= 6.13.4
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+# clone do repositório
+git clone https://github.com/Miler1/projeto-angular-springboot.git
 
-## Running unit tests
+# mudar o diretorio do nosso repo
+cd projeto-angular-springboot
+cd angular-client-jwt
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# instalar o repo com npm install
+npm install
 
-## Running end-to-end tests
+# iniciar o servidor
+npm start
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+Com isso a aplicação do frontend poderá ser acessada através deste link: [http://localhost:4200](http://localhost:4200)
