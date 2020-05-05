@@ -24,25 +24,22 @@ mvn spring-boot:run
 
 ## Script SQL do banco de dados
 
-No repositório principal se encontra o script de criação das tabelas do banco de dados. O script deverá ser importado no MySQL Workbench em qualquer IDE de preferência ou pelo terminal.
+No repositório principal se encontra o script de criação das tabelas do banco de dados. O script deverá ser importado no MySQL Workbench em qualquer IDE de preferência ou pelo terminal. Em ambas as formas tanto pelo Workbench como pelo terminal deverá ser criado a base de dados antes de ser importado o arquivo.
 
 ```
-# comando do terminal
-mysql -u <username> -p<PlainPassword> <databasename> < <filename.sql>
-```
-
-Em ambas as formas tanto pelo Workbench como pelo terminal deverá ser criado a base de dados antes de ser importado o arquivo.
-
-```
-# pelo terminal basta digitar
+# criar a base de dados pelo terminal basta digitar
 mysql -u <username> -p 
 
-# tecle enter após isso informe a senha e entre com comando abaixo
+# O comando acima fará com que a senha seja solicitada pelo MySQL portanto informe a senha em seguida entre com o comando na qual criará a base de dados
 CREATE DATABASE dbtest; 
-assim o banco de dados será criado
 ```
 
-## Executar o script SQL abaixo
+```
+# comando de importação pelo terminal
+# importante que o usuario esteja no mesmo diretório onde se encontra o script
+mysql -u <username> -p<PlainPassword> <databasename> < <script.sql>
+```
+
 ```
 INSERT INTO roles(name) VALUES('ROLE_USER');
 INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
