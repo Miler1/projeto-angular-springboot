@@ -30,7 +30,8 @@ No repositório principal se encontra o script de criação das tabelas do banco
 # criar a base de dados pelo terminal basta digitar
 mysql -u <username> -p 
 
-# O comando acima fará com que a senha seja solicitada pelo MySQL portanto informe a senha em seguida entre com o comando na qual criará a base de dados
+# O comando acima fará com que a senha seja solicitada pelo MySQL portanto informe a senha em seguida 
+entre com o comando na qual criará a base de dados
 CREATE DATABASE dbtest; 
 ```
 ```
@@ -39,8 +40,8 @@ CREATE DATABASE dbtest;
 mysql -u <username> -p<PlainPassword> <databasename> < <script.sql>
 ```
 ```
-# ao executar o script.sql verificar os dados da tabela "roles" responsável pelo perfis dos usuários, caso esta não seja preenchido corretamente ou apagada basta executar o comando
-
+# ao executar o script.sql verificar os dados da tabela "roles" responsável pelo perfis dos usuários, 
+caso esta não seja preenchido corretamente ou apagada basta executar o comando
 INSERT INTO roles(name) VALUES('ROLE_USER');
 INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
 INSERT INTO roles(name) VALUES('ROLE_ADMIN');
