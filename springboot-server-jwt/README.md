@@ -1,7 +1,7 @@
 
 ## Quick start
 
-O servidor foi implementado na linguagem java com Spring Boot que é baseada no Spring e para o armazenamento de dados foi utilizado o servidor MySQL.
+O servidor foi implementado na linguagem java com Spring Boot que é baseada no Spring e para o armazenamento de dados foi utilizado o servidor MySQL. Além disso foi configurado uma biblioteca de autenticação conhecida como JWT (Json Web Token) para garantir o acesso de determinados recursos somente com o referido token de autenticação para garantir a segurança das informações.
 
 Para executar o servidor spring boot deverão ser executadas as seguintes etapas:
 
@@ -22,13 +22,6 @@ basta executar o comando:
 mvn spring-boot:run
 ```
 
-## Executar o script SQL abaixo
-```
-INSERT INTO roles(name) VALUES('ROLE_USER');
-INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
-INSERT INTO roles(name) VALUES('ROLE_ADMIN');
-```
-
 ## Script SQL do banco de dados
 
 No repositório principal se encontra o script de criação das tabelas do banco de dados. O script deverá ser importado no MySQL Workbench em qualquer IDE de preferência ou pelo terminal.
@@ -47,6 +40,13 @@ mysql -u <username> -p
 # tecle enter após isso informe a senha e entre com comando abaixo
 CREATE DATABASE dbtest; 
 assim o banco de dados será criado
+```
+
+## Executar o script SQL abaixo
+```
+INSERT INTO roles(name) VALUES('ROLE_USER');
+INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
+INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 ```
 
 ```
