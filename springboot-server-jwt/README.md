@@ -31,10 +31,13 @@ INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 
 ## Script SQL do banco de dados
 
-No repositório principal se encontra o script de criação das tabelas do banco de dados.
+No repositório principal se encontra o script de criação das tabelas do banco de dados. O script deverá ser importado no MySQL Worbench ou em qualquer IDE de preferência ou pelo terminal com o comando:
+
+
+
 ```
 # repositorio do backup
-https://github.com/Miler1/projeto-angular-springboot/
+https://github.com/Miler1/projeto-angular-springboot/blob/master/script.sql
 
 ```
 
