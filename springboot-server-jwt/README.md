@@ -31,20 +31,22 @@ INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 
 ## Script SQL do banco de dados
 
-No repositório principal se encontra o script de criação das tabelas do banco de dados. O script deverá ser importado no MySQL Worbench ou em qualquer IDE de preferência ou pelo terminal com o comando:
+No repositório principal se encontra o script de criação das tabelas do banco de dados. O script deverá ser importado no MySQL Workbench em qualquer IDE de preferência ou pelo terminal.
 
 ```
-# comando tanto no Linux ou no Windows
+# comando do terminal
 mysql -u <username> -p<PlainPassword> <databasename> < <filename.sql>
 ```
 
 Em ambas as formas tanto pelo Workbench como pelo terminal deverá ser criado a base de dados antes de ser importado o arquivo.
+
 ```
-# pelo terminal
+# pelo terminal basta digitar
 mysql -u <username> -p 
 
-# tecle enter após isso informe a senha e entre com este comando
-CREATE DATABASE dbtest; assim o banco de dados será criado
+# tecle enter após isso informe a senha e entre com comando abaixo
+CREATE DATABASE dbtest; 
+assim o banco de dados será criado
 ```
 
 ```
