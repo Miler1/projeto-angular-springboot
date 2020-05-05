@@ -33,19 +33,18 @@ mysql -u <username> -p
 # O comando acima fará com que a senha seja solicitada pelo MySQL portanto informe a senha em seguida entre com o comando na qual criará a base de dados
 CREATE DATABASE dbtest; 
 ```
-
 ```
 # comando de importação pelo terminal
 # importante que o usuario esteja no mesmo diretório onde se encontra o script
 mysql -u <username> -p<PlainPassword> <databasename> < <script.sql>
 ```
-
 ```
+# ao executar o script.sql verificar os dados da tabela "roles" responsável pelo perfis dos usuários, caso esta não seja preenchido corretamente ou apagada basta executar o comando
+
 INSERT INTO roles(name) VALUES('ROLE_USER');
 INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
 INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 ```
-
 ```
 # repositorio do backup no github
 https://github.com/Miler1/projeto-angular-springboot/blob/master/script.sql
