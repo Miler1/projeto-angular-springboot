@@ -22,6 +22,7 @@ import {
   MatSnackBarModule,
   MatSortModule
 } from '@angular/material';
+import { NgxSpinnerModule } from 'ngx-spinner';
 import { TextMaskModule } from 'angular2-text-mask';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -72,6 +73,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     MatSnackBarModule,
     MatSortModule,
     TextMaskModule,
+    NgxSpinnerModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,

@@ -1,9 +1,11 @@
+<ngx-spinner size = "medium" color = "#fff" type = "ball-clip-rotate" 
+[fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
 <div fxLayout fxLayoutAlign="center center">
 	<mat-form-field class="input-search">
 	  <input matInput type="text" (keyup)="doFilter($event.target.value)" placeholder="Filtro">
 	</mat-form-field>
 	<button mat-raised-button color="primary" (click)="openDialog()" class="align-button">Adicionar</button>
-  </div>
+</div>
 <div>
 	<table mat-table [dataSource]="dataSource" matSort MatPaginator class="mat-elevation-z8">
 		<!-- ID Column -->
@@ -89,6 +91,7 @@
 		<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
 		<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 	</table>
-
-	<mat-paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+</div>
+<div fxLayout fxLayoutAlign="center center">
+	<mat-paginator style="margin-right: -5px; margin-left: 5px;" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
 </div>

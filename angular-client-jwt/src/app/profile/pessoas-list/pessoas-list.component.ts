@@ -65,6 +65,7 @@ export class PessoasListComponent implements OnInit, AfterViewInit {
 
   public doFilter = (value: string) => {
     this.dataSource.filter = value.trim().toLocaleLowerCase();
+    this.dataSource.filter.fontcolor('#fff');
   }
 
   deletePessoa(id) {
@@ -109,7 +110,7 @@ export class PessoasListComponent implements OnInit, AfterViewInit {
     });
     setTimeout(() => {
       this.spinner.hide();
-    }, 3000);
+    }, 1000);
   }
 
   openDialog(pessoa = null) {
