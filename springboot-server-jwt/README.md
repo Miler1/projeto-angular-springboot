@@ -22,6 +22,8 @@ basta executar o comando:
 mvn spring-boot:run
 ```
 
+Ao executar o comando acima o servidor springboot criará automaticamente a base de dados com as tabelas do sistema. 
+
 ## Script SQL do banco de dados
 
 No repositório principal se encontra o script de criação das tabelas do banco de dados. O script deverá ser importado no MySQL Workbench em qualquer IDE de preferência ou pelo terminal. Em ambas as formas tanto pelo Workbench como pelo terminal deverá ser criado a base de dados antes de ser importado o arquivo.
@@ -32,7 +34,7 @@ mysql -u <username> -p
 
 # O comando acima fará com que a senha seja solicitada pelo MySQL portanto informe a senha em seguida 
 entre com o comando na qual criará a base de dados
-CREATE DATABASE dbtest; 
+CREATE DATABASE testdb; 
 ```
 ```
 # comando de importação pelo terminal
