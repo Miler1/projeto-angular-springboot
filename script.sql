@@ -128,7 +128,6 @@ CREATE TABLE `user_roles` (
 
 LOCK TABLES `user_roles` WRITE;
 /*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
-INSERT INTO `user_roles` VALUES (1,1),(2,1),(21,1),(22,1),(23,1),(24,1),(25,1),(26,1),(27,1),(28,1),(29,1),(30,1),(31,1),(32,1),(33,1),(34,1),(35,1),(36,1),(37,1),(38,1);
 /*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -156,7 +155,6 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'zkoder@gmail.com','$2a$10$B1MOGK1KYcbVBcwZM8cP1eIpnUr3qmQTLkhnmcI6YBTqBpLC3/BS.','happykoder'),(2,'miler@gmail.com','$2a$10$7Cb1J7RexkIWM6Ru7JE7I.AmtY7CKYJJEtJtUvtvCDRLn9YlyqOc2','miler'),(35,'fevbrwbr@ggnr','$2a$10$euW.dxypHandpP/DUQ8.9euWL3m6399MsDKDPjGrxh45/AEcxwQ1G','bfnfhrt'),(34,'qsqwqw@sfsfs','$2a$10$M.L.RCjesjl9.fPd.9lPOeUOJLekbsYVB2M.wa0EqmCmgFRDBMBEu','milersqsqs'),(33,'zkoder345@gmail.com','$2a$10$ANK6AyQgAXwKin0sCSPLEOqnNPlXi00dOdxqRwUrmTh1vNjik1BIK','happykoder1234'),(32,'abcdef@gmail.com','$2a$10$LxTGXGpok7LH9fViJB8.5.WFt51h3w0j3GyrckU4.0VLFBB.wWtli','abcdef'),(31,'wwerrt@admin','$2a$10$7QnOVWOWtyZNiU4u5KBUR.dNzZbndj1/6tRUVS4UrEUd.gvvlo.lq','03/'),(30,'123fgfhfd@root','$2a$10$vBuC7Jxa4oNB908QqZ3vAeSd34T6.Dxk5Ejrjw3IrgVndQgPiiS3S','zzzz'),(29,'mjmujy@root','$2a$10$P1pkuAczeb66HSHZp1V0Ku3aNiK2YYoXxzfXlOuOpEnJqiXwHQgA6','03/03/1998'),(28,'ff@frdt.com','$2a$10$lY3j8lNP3jVyfy2rV0/NKuVJIJjgpYlv9o.QlKKh/M/EiFBGUj2i.','1/23/2020'),(27,'sw@root','$2a$10$8bR7EnqZ.y.GQJOj52mC3usnfF2BcmeAs26CwGyVboY/pMTovryQi','happykoder123'),(26,'55r@admin','$2a$10$zQ6kTVnDxfNsE.Be/.lNWutxRAcw1BdYHozWPwv00Lv8Dmd5oNpYy','miler1234'),(25,'dwdwdwdw@admin','$2a$10$A3Em0PXKGfTR4Dahs7xT3uozIte8hPn6J6vZRy2Ys1hakH.fz/xhK','miler12'),(24,'wdwdd@root','$2a$10$Hmn88skKdWetWpM/LSgMIu0MXmSbnOC/Os84nv9n7ujVrph8gBa.W','dddfefef'),(23,'rgrgrg@fgdgdg','$2a$10$oHPsvGIrHA7m1HCiwUdOOO.3BOHmdMPyZqMTPGNQR0hsx9oWOE302','1/24/2020'),(22,'zkoder2@gmail.com','$2a$10$qszFuTUO6dNSfarGGqgrkejtFtpWjMisJidW1qnRgAIJMz5F1DxO.','miler2'),(21,'zkoder1@gmail.com','$2a$10$qxsAl8APj7dPDoxAKIAmnegx6Rqi7C7l/USDYkpIgMdjWJyrubPpW','miler1'),(36,'cwccec@grgre','$2a$10$C12z2FVKOY9pbNr/0VU57.PrFNQbpKcwriixLPhpMZeRD.DnV0o5u','dwvwvwq'),(37,'zkodefgrgr@gmail.com','$2a$10$BNbui/CrN2UClVgCOFRSF.7kMeL3FpbHdu4X1gCSCe8PWCJeRyWXq','miler1245'),(38,'hrb@grrbr','$2a$10$UZOvuA6HgjwFjSYEHgfemu9krElabuustddKIB/.Pb24BFt6IGrSK','ntthtrh');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
