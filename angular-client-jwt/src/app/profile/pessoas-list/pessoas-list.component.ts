@@ -37,6 +37,7 @@ export class PessoasListComponent implements OnInit, AfterViewInit {
   estados = [];
   closeResult: string;
   reload: boolean;
+  isLoading: boolean;
   angForm: FormGroup;
   dataSource = new MatTableDataSource<Pessoa>();
   displayedColumns: string[] = ['id', 'nome', 'cpf', 'endereco', 'bairro', 'cidade', 'uf', 'cep', 'email', 'telefone', 'skype', 'actions_upd', 'actions_del'];
@@ -102,14 +103,16 @@ export class PessoasListComponent implements OnInit, AfterViewInit {
   }
 
   reloadData() {
-    this.spinner.show();
+    // this.spinner.show();
+    this.isLoading = true;
     this.pessoas = this.pessoaService.getPessoasList();
     this.pessoas.subscribe(data => {
       if (data != null)
         this.dataSource.data = data as Pessoa[];
     });
     setTimeout(() => {
-      this.spinner.hide();
+      // this.spinner.hide();
+      this.isLoading = false;
     }, 1000);
   }
 

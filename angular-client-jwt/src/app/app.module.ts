@@ -20,7 +20,8 @@ import {
   MatDatepickerModule,
   MatDialogModule,
   MatSnackBarModule,
-  MatSortModule
+  MatSortModule,
+  MatProgressSpinnerModule
 } from '@angular/material';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { TextMaskModule } from 'angular2-text-mask';
@@ -75,6 +76,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     TextMaskModule,
     NgxSpinnerModule,
     FormsModule,
+    MatProgressSpinnerModule,
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule

@@ -18,6 +18,7 @@ import { promise } from 'protractor';
   ]
 })
 export class EditDialogComponent implements OnInit {
+  title: string = 'Formulário de Cadastro';
   form: FormGroup;
   pessoa: Pessoa;
   estados = [];
